@@ -13,4 +13,11 @@
 
 """
 
-pwd = input("請輸入密碼: ")
+try:
+    pwd = float(input("請輸入華氏溫度: "))
+    f87 = (pwd - 32) * 5 / 9
+    print(f"華氏溫度{pwd}F等於攝氏溫度{f87}C")
+
+except:
+    # 如果有錯誤發生，執行這段程式碼
+    print("輸入錯誤!")
