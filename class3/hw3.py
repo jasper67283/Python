@@ -14,10 +14,18 @@
 """
 
 try:
-    pwd = float(input("請輸入華氏溫度: "))
-    f87 = (pwd - 32) * 5 / 9
-    print(f"華氏溫度{pwd}F等於攝氏溫度{f87}C")
+    f = float(input("請輸入華氏溫度: "))
+except:
+    print("輸入錯誤!")
+else:  # 如果輸入的是數字可以進行運算，就可以轉換成攝氏溫度
+    c = (f - 32) * 5 / 9
+    print(f"華氏溫度{f}F等於攝氏溫度{c}C")
 
+
+try:  # 嘗試轉換成浮點數
+    f = float(input("請輸入華氏溫度: "))
+    c = (f - 32) * 5 / 9
+    print(f"華氏溫度{f}F等於攝氏溫度{c}C")
 except:
     # 如果有錯誤發生，執行這段程式碼
     print("輸入錯誤!")
