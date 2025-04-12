@@ -1,7 +1,19 @@
-import turtle as t
+import turtle as t  # 匯入模組turtle，並將其命名為t
 
-for i in range(4):
-    t.forward(1000)  # 向前移動100單位
-    t.right(90)  # 向右移動90度
+# from turtle import *  # 匯入模組turtle的所有功能
+# from turtle import done  # 匯入模組turtle的done函式
 
-t.done()
+# done()
+# turtle.done()
+
+t.speed(100)  # 設定速度為1
+t.forward(100)  # 向前移動100單位
+t.right(90)  # 向右移動90度
+t.forward(100)  # 向前移動100單位
+t.right(90)  # 向右移動90度
+t.forward(100)  # 向前移動100單位
+t.right(90)  # 向右移動90度
+t.forward(100)  # 向前移動100單位
+t.right(90)  # 向右移動90度
+# 發現turtle一開始面向右邊
+t.done()  # 讓視窗不要關閉

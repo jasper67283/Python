@@ -14,7 +14,7 @@ import turtle as t  # 匯入模組turtle，並將其命名為t
 # done()
 # turtle.done()
 
-t.speed(100)  # 設定速度為1
+t.speed(1)  # 設定速度為1
 t.forward(100)  # 向前移動100單位
 t.right(90)  # 向右移動90度
 t.forward(100)  # 向前移動100單位
@@ -43,7 +43,7 @@ for i in range(1, 6, 2):  # range = 1,3 ,5
 import turtle as t
 
 for i in range(4):
-    t.forward(1000)  # 向前移動100單位
+    t.forward(100)  # 向前移動100單位
     t.right(90)  # 向右移動90度
 
 t.done()
