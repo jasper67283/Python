@@ -39,6 +39,46 @@ EX:
   *
 """
 
-回應
 
-回覆
+f = int(input("請輸入數字: "))
+sum = 0
+for i in range(f + 1):
+    sum = sum * i
+print(sum)
+
+import turtle as t
+
+t.speed(0)
+t.penup()
+for i in range(13):
+    t.forward(100)
+    t.stamp()
+    t.home()
+    t.right(30 * i)
+t.done()
+
+import turtle as t
+import time
+
+t.speed(0)
+for i in range(60):
+    t.right(6 * i)
+    t.forward(80)
+    time.sleep(1)
+    t.home()
+
+n = int(input("請輸入數字: "))
+for i in range(1, n + 1):
+    if i % 3 == 0 or i % 7 == 0:
+        print(i)
+
+n = int(input("請輸入數字: "))
+for i in range(1, n + 1):
+    print(f" " * (n - i) + "*" * (2 * i - 1))
+for i in range(1, n + 1):
+    print(f" " * (n - 1) + "*")
+
+user_input = ""
+while user_input != "1234":
+    user_input = input("請輸入數字: ")
+print("密碼正確")
