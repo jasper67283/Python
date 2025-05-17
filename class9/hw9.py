@@ -19,3 +19,39 @@ EX:
 請輸入23~25的整數:24
 恭喜猜中!
 """
+
+import random
+
+a = 0
+v = 100
+i = random.randint(a, v)
+f = int(input("請輸入數字: "))
+while f != i:
+    if f > i:
+        print("在小一點")
+        v = f
+    else:
+        print("在大一點")
+        a = f
+    f = int(input(f"請輸入{a}~{v}的整數:"))
+    i = random.randint(a, v)
+else:
+    print("正確")
+
+
+while True:
+    print("1. applejuice")
+    print("2. orangejuice")
+    print("3. grapejuice")
+    print("4. quit")
+    choice = input("請輸入數字:")
+    if choice == "1":
+        print("applejuice")
+    elif choice == "2":
+        print("orangejuice")
+    elif choice == "3":
+        print("grapejuice")
+    elif choice == "4":
+        break
+    else:
+        print("輸入錯誤查無此果汁 請重新輸入")
